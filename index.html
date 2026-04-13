@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6-Day Video-Making Lab — From AI Clips to Real Videos</title>
+  <meta name="description" content="A 6-day hands-on video-making lab where you go from AI-generated clips to real, publish-ready videos. Learn scripting, framing, prompting, and sound design." />
+  <meta name="keywords" content="AI video making, video course, prompt engineering, video editing, AI video lab" />
+  <meta property="og:title" content="6-Day Video-Making Lab" />
+  <meta property="og:description" content="Go from AI-generated clips to real, publish-ready videos — made by you, with me." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cursor follower -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">THE LAB<span class="dot">.</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#why" class="nav-link">Why</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link nav-link--cta">Get In</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text" aria-hidden="true">VIDEO</div>
+    <div class="hero-content">
+      <div class="hero-label">
+        <span class="hero-label-line"></span>
+        <span>6-Day Lab &middot; Hands-On &middot; 3 Videos</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-line" data-reveal>A Video-Making</span>
+        <span class="hero-title-line" data-reveal>Lab<span class="dot">.</span></span>
+      </h1>
+      <p class="hero-sub" data-reveal>
+        Where you go from "AI-generated clips" to real, publish-ready videos — made by you, with me.
+      </p>
+      <div class="hero-cta-row" data-reveal>
+        <a href="#schedule" class="btn btn-primary">See the Schedule</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+      <div class="hero-scroll-hint" data-reveal>
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </div>
+    <div class="hero-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>SCRIPT &middot; FRAME &middot; DESCRIBE &middot; TRANSITION &middot; GENERATE &middot; SOUND &middot; PUBLISH &middot;&nbsp;</span>
+        <span>SCRIPT &middot; FRAME &middot; DESCRIBE &middot; TRANSITION &middot; GENERATE &middot; SOUND &middot; PUBLISH &middot;&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / IDEA -->
+  <section class="section section--about" id="about">
+    <div class="container">
+      <div class="section-label" data-reveal>{ 01 } — THE IDEA</div>
+      <div class="about-grid">
+        <div class="about-left" data-reveal>
+          <h2 class="section-heading">
+            Most people treat AI<br/>as a magic button.
+          </h2>
+        </div>
+        <div class="about-right" data-reveal>
+          <p class="about-text">
+            Prompt → video → done. This course is the opposite.
+          </p>
+          <p class="about-text">
+            You learn how to <em>think</em>, <em>plan</em>, and <em>make</em> a video <strong>before</strong> you even hit generate. By the end, you'll have <strong>3 solid videos</strong> you can publish anywhere — not just a bunch of random clips.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">6</span>
+              <span class="stat-label">Days</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Videos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1</span>
+              <span class="stat-label">Live Session</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="section section--schedule" id="schedule">
+    <div class="container">
+      <div class="section-label" data-reveal>{ 02 } — THE SCHEDULE</div>
+      <h2 class="section-heading section-heading--center" data-reveal>
+        Here's what happens<br/>in 6 days + 1 Sunday.
+      </h2>
+
+      <div class="timeline">
+        <!-- Day 1 -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-day">
+            <span class="timeline-number">01</span>
+            <span class="timeline-badge">Day 1</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Script as a Video Plan</h3>
+            <p>We write scripts for all 3 videos, built so they can directly become AI-video prompts. You'll learn how to structure your idea so the AI actually understands what you want.</p>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-day">
+            <span class="timeline-number">02</span>
+            <span class="timeline-badge">Day 2</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Image from Simple Action</h3>
+            <p>For an 8-second video, we break it into frames and generate still images for each "simple action", using a clear visual language. No guessing, just frames you can actually animate.</p>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-day">
+            <span class="timeline-number">03</span>
+            <span class="timeline-badge">Day 3</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Dress the Image</h3>
+            <p>You learn how to describe each image deeply: first frame and last frame, in colour, lighting, composition, and mood. You'll practice writing prompts that feel cinematic, not generic.</p>
+          </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-day">
+            <span class="timeline-number">04</span>
+            <span class="timeline-badge">Day 4</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Moving Between Clips</h3>
+            <p>We design the transitions between shots: how one clip flows into the next. This is where your video starts to feel like a real story, not a slideshow.</p>
+          </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-day">
+            <span class="timeline-number">05</span>
+            <span class="timeline-badge">Day 5</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Time to Generate Video</h3>
+            <p>You mix all the pieces and generate the full videos from your refined prompts. We watch, compare, and tweak until it feels like <em>your</em> style.</p>
+          </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-day">
+            <span class="timeline-number">06</span>
+            <span class="timeline-badge">Day 6</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Sound and Life</h3>
+            <p>You craft audio or voice from the same scripts so your 3 videos feel complete: visuals + sound, not just silent clips.</p>
+          </div>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="timeline-item timeline-item--special" data-reveal>
+          <div class="timeline-day">
+            <span class="timeline-number">07</span>
+            <span class="timeline-badge timeline-badge--live">Sunday Live</span>
+          </div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Live Session + Feedback</h3>
+            <p>On Sunday, we do a live interactive session for questions, feedback, and how your videos actually land when shared. Think of it as "video-making office hours".</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY THIS STRUCTURE -->
+  <section class="section section--why" id="why">
+    <div class="container">
+      <div class="section-label" data-reveal>{ 03 } — WHY THIS WORKS</div>
+      <h2 class="section-heading" data-reveal>
+        A 2-hour live session alone<br/>won't change how you work.
+      </h2>
+      <p class="why-sub" data-reveal>What changes your craft is doing it yourself, then talking about it.</p>
+
+      <div class="pillars">
+        <div class="pillar" data-reveal>
+          <div class="pillar-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/><path d="M14 20h12M20 14v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="pillar-title">Non-Linear</h3>
+          <p>You don't just make one video a day. Instead, you build the same 3 videos bit-by-bit across the week, so you see how your thinking evolves.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="pillar-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="pillar-title">Hands-On</h3>
+          <p>Every day you make something real, not just watch. You write, you frame, you describe, you transition, you sound-design.</p>
+        </div>
+        <div class="pillar" data-reveal>
+          <div class="pillar-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 6v28M6 20h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/></svg>
+          </div>
+          <h3 class="pillar-title">Iterative</h3>
+          <p>You can compare your early attempts with your final versions, so you <em>see</em> where the magic is really happening.</p>
+        </div>
+      </div>
+
+      <div class="why-callout" data-reveal>
+        <p>You're not just "watching another YouTube video" and moving on. You're building your own process, and I'll be making short test videos alongside you, so we can compare what works and what doesn't.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK SHOWCASE -->
+  <section class="section section--work" id="work">
+    <div class="container">
+      <div class="section-label" data-reveal>{ 04 } — MY WORK</div>
+      <h2 class="section-heading" data-reveal>
+        Here's how I already think<br/>about video and motion.
+      </h2>
+
+      <div class="work-grid">
+        <a href="https://www.instagram.com/reel/DVmuWjBEiGb/?igsh=cHcwMTN2MHc5ampt" target="_blank" rel="noopener" class="work-card" data-reveal>
+          <div class="work-card-inner">
+            <span class="work-card-tag">Instagram Reel</span>
+            <h3 class="work-card-title">Clean Motion Storytelling</h3>
+            <p class="work-card-desc">Simple, clean motion that tells a story in seconds.</p>
+            <span class="work-card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DWCTuB2E6m1/?igsh=M2o4bnJ3dWloNDg=" target="_blank" rel="noopener" class="work-card" data-reveal>
+          <div class="work-card-inner">
+            <span class="work-card-tag">Instagram Reel</span>
+            <h3 class="work-card-title">Visual Decisions</h3>
+            <p class="work-card-desc">How tiny visual decisions — lighting, composition, timing — change the whole feel.</p>
+            <span class="work-card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DWF4QozkdoH/?igsh=M2IzNjB3dHY1cDNo" target="_blank" rel="noopener" class="work-card" data-reveal>
+          <div class="work-card-inner">
+            <span class="work-card-tag">Instagram Reel</span>
+            <h3 class="work-card-title">Lighting & Composition</h3>
+            <p class="work-card-desc">How small shifts in lighting and framing transform the final feel.</p>
+            <span class="work-card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DWIZVA-kXnc/?igsh=Zm40bDN6ZW00aDd2" target="_blank" rel="noopener" class="work-card" data-reveal>
+          <div class="work-card-inner">
+            <span class="work-card-tag">Instagram Reel</span>
+            <h3 class="work-card-title">Minimal Text + Motion</h3>
+            <p class="work-card-desc">Mixing minimal text and motion to keep the viewer hooked.</p>
+            <span class="work-card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DWLIvONEbCc/?igsh=MWR5cHdqbTE2bGM4aA==" target="_blank" rel="noopener" class="work-card" data-reveal>
+          <div class="work-card-inner">
+            <span class="work-card-tag">Instagram Reel</span>
+            <h3 class="work-card-title">Viewer Engagement</h3>
+            <p class="work-card-desc">Strategies for keeping eyes on screen with deliberate pacing.</p>
+            <span class="work-card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="https://youtu.be/U74VNhvDUB4?si=iOImMxklHm8IDE4T" target="_blank" rel="noopener" class="work-card work-card--featured" data-reveal>
+          <div class="work-card-inner">
+            <span class="work-card-tag">Studio Collab &middot; VISCR AI</span>
+            <h3 class="work-card-title">Launch-Style Video</h3>
+            <p class="work-card-desc">A launch-style video where structure, pacing, and emotion are as important as the visuals. Made in collaboration with VISCR AI (current company).</p>
+            <span class="work-card-arrow">&rarr;</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="work-note" data-reveal>
+        <p>Some of my content is a blend of manual design and AI. This course is built on that same mix: you learn the craft, then use AI to scale it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOUBTS & FEEDBACK -->
+  <section class="section section--doubts" id="doubts">
+    <div class="container">
+      <div class="section-label" data-reveal>{ 05 } — SUPPORT</div>
+      <div class="doubts-grid">
+        <div class="doubts-left" data-reveal>
+          <h2 class="section-heading">
+            You don't have to wait for the next live session.
+          </h2>
+        </div>
+        <div class="doubts-right" data-reveal>
+          <p>During the two-day break between the main sessions, you can:</p>
+          <ul class="doubts-list">
+            <li>Send in any doubts or questions from earlier days.</li>
+            <li>Ask for specific feedback on what to improve in your script, frames, or prompts.</li>
+          </ul>
+          <p>You'll use a Google Form link (shared with you) to submit these, and I'll reply directly with text-based feedback tailored to your work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section--pricing" id="pricing">
+    <div class="container">
+      <div class="section-label" data-reveal>{ 06 } — INVESTMENT</div>
+      <h2 class="section-heading section-heading--center" data-reveal>
+        This isn't a generic online course.
+      </h2>
+      <p class="pricing-sub" data-reveal>Think of it more like a hands-on workshop where you walk away with 3 publishable videos and a custom prompt cheat sheet — not just slides.</p>
+
+      <div class="pricing-card" data-reveal>
+        <div class="pricing-header">
+          <span class="pricing-badge">Enterprise-Style Lab</span>
+          <div class="pricing-amount">
+            <span class="pricing-currency">₹</span>
+            <span class="pricing-value">6,000</span>
+            <span class="pricing-period">/ week</span>
+          </div>
+          <p class="pricing-note">~₹1,000 per day &middot; 6 days × 1 hour + 1 live Sunday session</p>
+          <p class="pricing-negotiate">Budget can be discussed and negotiated based on your team size, timeline, and custom needs.</p>
+        </div>
+        <div class="pricing-features">
+          <div class="pricing-feature">
+            <span class="check-icon">✓</span>
+            <span>A customised workflow tailored to your content type</span>
+          </div>
+          <div class="pricing-feature">
+            <span class="check-icon">✓</span>
+            <span>A prompt cheat sheet you can reuse always</span>
+          </div>
+          <div class="pricing-feature">
+            <span class="check-icon">✓</span>
+            <span>Direct feedback + side-by-side examples</span>
+          </div>
+          <div class="pricing-feature">
+            <span class="check-icon">✓</span>
+            <span>3 publish-ready videos by the end</span>
+          </div>
+          <div class="pricing-feature">
+            <span class="check-icon">✓</span>
+            <span>Google Form access for async Q&A</span>
+          </div>
+        </div>
+        <a href="mailto:shruteesucharita@gmail.com?subject=Interested in the 6-Day Video Lab" class="btn btn-primary btn-full">Reach Out to Discuss →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section class="section section--me" id="me">
+    <div class="container">
+      <div class="section-label" data-reveal>{ 07 } — ABOUT ME</div>
+      <div class="me-grid">
+        <div class="me-left" data-reveal>
+          <h2 class="section-heading">
+            I've already done this, so you don't have to figure it out from scratch.
+          </h2>
+        </div>
+        <div class="me-right" data-reveal>
+          <p>I work full-time as an experience and visual designer, but this course is something I'm doing purely out of passion and curiosity — to meet people, see how they're using video and AI, and co-build something that actually works in real projects.</p>
+          <p>You bring your ideas; I'll help you structure them into videos that feel intentional, not accidental.</p>
+          <a href="https://shruteedesignsforyou.framer.website" target="_blank" rel="noopener" class="portfolio-link">
+            <span>View Full Portfolio</span>
+            <span class="portfolio-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section class="section section--contact" id="contact">
+    <div class="container">
+      <div class="contact-block" data-reveal>
+        <h2 class="contact-heading">Ready to make<br/>videos that matter?</h2>
+        <p class="contact-sub">Reach out and let's shape your next 3 videos together.</p>
+        <a href="mailto:shruteesucharita@gmail.com?subject=Interested in the 6-Day Video Lab" class="btn btn-primary btn-lg">shruteesucharita@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">THE LAB<span class="dot">.</span></span>
+        <span class="footer-copy">&copy; 2026. All rights reserved.</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.instagram.com/reel/DVmuWjBEiGb/?igsh=cHcwMTN2MHc5ampt" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://shruteedesignsforyou.framer.website" target="_blank" rel="noopener">Portfolio</a>
+        <a href="mailto:shruteesucharita@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
