@@ -95,10 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // ---------- TIMELINE LINE ANIMATION ----------
-  const timelineLine = document.querySelector('.timeline::before');
-  // Enhanced via CSS – no JS needed
-
   // ---------- WORK CARD TILT EFFECT ----------
   if (window.matchMedia('(pointer: fine)').matches) {
     document.querySelectorAll('.work-card').forEach(card => {
@@ -106,11 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const rect = card.getBoundingClientRect();
         const x = (e.clientX - rect.left) / rect.width - 0.5;
         const y = (e.clientY - rect.top) / rect.height - 0.5;
-        card.style.transform = `translateY(-4px) perspective(800px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
+        card.style.transform = `translateY(-4px) perspective(800px) rotateY(${x * 3}deg) rotateX(${-y * 3}deg)`;
+        card.style.boxShadow = `${-x * 10}px ${y * 10}px 40px rgba(0,0,0,0.08)`;
       });
 
       card.addEventListener('mouseleave', () => {
         card.style.transform = '';
+        card.style.boxShadow = '';
       });
     });
   }
@@ -122,11 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const rect = pricingCard.getBoundingClientRect();
       const x = ((e.clientX - rect.left) / rect.width) * 100;
       const y = ((e.clientY - rect.top) / rect.height) * 100;
-      pricingCard.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 50%, transparent 80%)`;
+      pricingCard.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(0,0,0,0.015) 0%, rgba(255,255,255,1) 50%)`;
     });
 
     pricingCard.addEventListener('mouseleave', () => {
-      pricingCard.style.background = 'rgba(255,255,255,0.02)';
+      pricingCard.style.background = '#ffffff';
     });
   }
 
@@ -137,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const rect = pillar.getBoundingClientRect();
         const x = ((e.clientX - rect.left) / rect.width) * 100;
         const y = ((e.clientY - rect.top) / rect.height) * 100;
-        pillar.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(255,255,255,0.03) 0%, transparent 60%)`;
+        pillar.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(0,0,0,0.02) 0%, rgba(255,255,255,1) 60%)`;
       });
 
       pillar.addEventListener('mouseleave', () => {
